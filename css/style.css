@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 115%;
+  background-color: #fdf5e6; /* Thêm màu nền nhạt cho giống với ảnh mẫu */
+}
+
+/* 1. Nút Skip to Main Content */
+.skip-link {
+  display: block;
+  padding: 10px;
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #d3d3d3;
+}
+
+/* 3. Thay đổi thẻ nav thành inline-block và rộng 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none; /* Xóa dấu chấm tròn của danh sách */
+  padding: 0;
+  text-align: center;
+}
+
+/* 2. Comment lại style cũ của thẻ li */
+/*
+li {
+  display: inline-block;
+  width: 30%;
+}
+*/
+
+/* Thêm style mới cho thẻ li để nằm ngang */
+li {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* 4. Descendent selector cho hình ảnh bên trong header/nav */
+header img, nav img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+main {
+  background-color: #ffff00;
+  font-size: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Apple Chancery', 'Brush Script MT', Georgia, cursive;
+  color: #00008b;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* 5 & 7. Style cho class .grid (dùng ở trang Neighborhood) */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* 6. Chiều rộng ảnh trong class grid là 100% */
+.grid img {
+  width: 100%;
+}
+
+/* 8. Style cho class .flex (dùng ở trang Parks) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex img {
+  margin: 10px;
+}
